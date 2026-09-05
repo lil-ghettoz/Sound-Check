@@ -12,13 +12,6 @@ No installation is required.
 
 ## Add music
 
-The custom player expects these files:
-
-- `audio/static-hearts.mp3`
-- `audio/blue-room.mp3`
-- `audio/217-am.mp3`
-- `audio/first-train-home.mp3`
-
 You can use your own royalty-free/demo MP3 files. The site itself does not include copyrighted music.
 
 ## Included
