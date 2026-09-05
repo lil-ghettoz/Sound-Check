@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sound Check — Nova Reyes, indie / lo-fi musician."
+    />
+    <title>Nova Reyes — Sound Check</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="Nova Reyes home"
+        >NR<span>.</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#music">Music</a>
+        <a href="#tour">Tour</a>
+        <a href="#about">About</a>
+        <a href="#newsletter">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow reveal">DEBUT EP / 2026</p>
+          <h1 class="hero-title reveal"><span>NOVA</span><span>REYES</span></h1>
+          <div class="hero-bottom reveal">
+            <p>Songs for the hours<br />nobody talks about.</p>
+            <a class="button" href="#music">Listen Now <span>↘</span></a>
+          </div>
+        </div>
+        <p class="vertical-label" aria-hidden="true">SOUND CHECK / 01</p>
+        <div class="scroll-cue" aria-hidden="true">SCROLL <span>↓</span></div>
+      </section>
+
+      <section class="music section" id="music">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 / MUSIC</p>
+          <p class="section-note">
+            Recorded between 1:13 AM<br />and the first train home.
+          </p>
+        </div>
+
+        <div class="music-layout">
+          <div class="ep-art reveal">
+            <div class="art-inner">
+              <span>AFTER</span>
+              <span>MIDNIGHT</span>
+              <small>NOVA REYES / 001</small>
+            </div>
+          </div>
+
+          <div class="player-panel reveal">
+            <div class="player-top">
+              <div>
+                <p class="tiny">NOW PLAYING</p>
+                <h2 id="trackTitle">Static Hearts</h2>
+                <p id="trackMeta">After Midnight · 01</p>
+              </div>
+              <span class="duration" id="duration">--:--</span>
+            </div>
+
+            <div
+              class="visualizer"
+              id="visualizer"
+              aria-label="Audio visualizer"
+            >
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i> <i></i
+              ><i></i><i></i><i></i><i></i><i></i><i></i><i></i> <i></i><i></i
+              ><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+
+            <div class="progress-wrap">
+              <input
+                id="seek"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                aria-label="Seek through track"
+              />
+              <div class="time-row">
+                <span id="current">0:00</span><span id="total">0:00</span>
+              </div>
+            </div>
+
+            <div class="controls">
+              <button class="icon-button" id="prev" aria-label="Previous track">
+                ↶
+              </button>
+              <button class="play-button" id="play" aria-label="Play">▶</button>
+              <button class="icon-button" id="next" aria-label="Next track">
+                ↷
+              </button>
+            </div>
+
+            <ol class="track-list" id="trackList"></ol>
+            <audio id="audio" preload="metadata"></audio>
+            <p class="player-hint" id="playerHint">
+              Demo player — add your own MP3 files to the audio folder.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tour section" id="tour">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 / LIVE</p>
+          <p class="section-note">Small rooms.<br />Big feelings.</p>
+        </div>
+        <div class="tour-list">
+          <article class="tour-row reveal">
+            <time datetime="2026-09-18"
+              ><strong>18</strong><span>SEP<br />2026</span></time
+            >
+            <div>
+              <p>Berlin, DE</p>
+              <h3>Privatclub</h3>
+            </div>
+            <a href="#newsletter" aria-label="Join waitlist for Berlin"
+              >RSVP ↗</a
+            >
+          </article>
+          <article class="tour-row reveal">
+            <time datetime="2026-10-03"
+              ><strong>03</strong><span>OCT<br />2026</span></time
+            >
+            <div>
+              <p>Amsterdam, NL</p>
+              <h3>Paradiso Noord</h3>
+            </div>
+            <a href="#newsletter" aria-label="Join waitlist for Amsterdam"
+              >RSVP ↗</a
+            >
+          </article>
+          <article class="tour-row reveal">
+            <time datetime="2026-10-22"
+              ><strong>22</strong><span>OCT<br />2026</span></time
+            >
+            <div>
+              <p>London, UK</p>
+              <h3>Village Underground</h3>
+            </div>
+            <a href="#newsletter" aria-label="Join waitlist for London"
+              >RSVP ↗</a
+            >
+          </article>
+          <article class="tour-row reveal">
+            <time datetime="2026-11-07"
+              ><strong>07</strong><span>NOV<br />2026</span></time
+            >
+            <div>
+              <p>Paris, FR</p>
+              <h3>La Maroquinerie</h3>
+            </div>
+            <a href="#newsletter" aria-label="Join waitlist for Paris"
+              >RSVP ↗</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 / NOVA</p>
+          <p class="section-note">A little noise<br />for quiet people.</p>
+        </div>
+        <div class="about-layout">
+          <div
+            class="portrait reveal"
+            role="img"
+            aria-label="Moody abstract portrait placeholder"
+          >
+            <div class="portrait-shape"></div>
+            <span>PORTRAIT<br />PLACEHOLDER</span>
+          </div>
+          <div class="bio reveal">
+            <p class="big-copy">
+              Nova Reyes makes lo-fi songs for late buses, dim bedrooms, and the
+              thoughts that only show up after midnight.
+            </p>
+            <p>
+              Raised on cassette hiss and overdriven guitars, Nova writes
+              intimate indie pop that feels close enough to touch. Her debut EP,
+              <em>After Midnight</em>, is a collection of imperfect little
+              moments: restless, warm, and deliberately human.
+            </p>
+            <p class="signature">N.R.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter section" id="newsletter">
+        <div class="newsletter-inner reveal">
+          <p class="eyebrow">04 / STAY CLOSE</p>
+          <h2>Stay up<br /><em>after midnight.</em></h2>
+          <p>
+            New songs, show dates, and occasional 2 AM thoughts. No spam. Ever.
+          </p>
+          <form id="newsletterForm" novalidate>
+            <label class="sr-only" for="email">Email address</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="your@email.com"
+              autocomplete="email"
+              required
+            />
+            <button class="button" type="submit">
+              Join the list <span>↗</span>
+            </button>
+          </form>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>NOVA REYES</strong><span>© 2026 / SOUND CHECK</span></div>
+      <div class="footer-links">
+        <a href="#top">Instagram</a><a href="#top">YouTube</a
+        ><a href="#top">Spotify</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
